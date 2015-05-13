@@ -14,7 +14,7 @@ class Postid(ndb.Model):
 
 class GetPost(webapp2.RequestHandler):
     def get(self):
-        url = "https://graph.facebook.com/me/home?limit=50&access_token="
+        url = "https://graph.facebook.com/me/home?limit=160&access_token="
         urlfetch.fetch(url=url, method=urlfetch.GET, deadline=60)
         urlfetch.set_default_fetch_deadline(60)
         graph = facebook.GraphAPI(access_token='')
