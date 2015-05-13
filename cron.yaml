@@ -1,0 +1,5 @@
+cron:
+- description: mail for the information
+  url: /
+  schedule: every 3 minutes
+  timezone: Europe/Istanbul
